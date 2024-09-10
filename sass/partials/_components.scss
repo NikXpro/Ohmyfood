@@ -26,3 +26,11 @@
     cursor: pointer;
   }
 }
+
+.title {
+  font-family: $font-text;
+  font-size: $font-size-1_5;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+}
