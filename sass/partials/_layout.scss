@@ -110,5 +110,11 @@
   display: flex;
   flex-direction: column;
   padding: 3.38rem 1.25rem 4.12rem 1.25rem;
-  gap: 1.12rem;
+  gap: 1.25rem;
+
+  .restaurants-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.13rem;
+  }
 }
