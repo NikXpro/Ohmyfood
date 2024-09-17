@@ -19,7 +19,12 @@ jobs:
         node-version: '14'
 
     - name: Install dependencies
-      run: npm ci
+      run: |
+        if [ -f package-lock.json ]; then
+          npm ci
+        else
+          npm install
+        fi
 
     - name: Compile Sass
       run: npm run sass
@@ -30,5 +35,4 @@ jobs:
         git config --local user.name "GitHub Action"
         git checkout -b build
         git add -A
-        git commit -m "Build: Compile Sass to CSS" -a || exit 0
-        git push origin build --force
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Build: Compile Sass to CSS" && git push origin build --force)
