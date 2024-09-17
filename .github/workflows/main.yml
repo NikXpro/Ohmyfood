@@ -18,6 +18,18 @@ jobs:
       with:
         node-version: '14'
 
+    - name: Cache node modules
+      uses: actions/cache@v2
+      env:
+        cache-name: cache-node-modules
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-build-${{ env.cache-name }}-
+          ${{ runner.os }}-build-
+          ${{ runner.os }}-
+
     - name: Install dependencies
       run: |
         if [ -f package-lock.json ]; then
@@ -25,9 +37,10 @@ jobs:
         else
           npm install
         fi
+        npm install -g sass
 
     - name: Compile Sass
-      run: npm run sass
+      run: sass sass/main.scss css/style.css
 
     - name: Commit and push if changed
       run: |
