@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ohmyfood - A la française</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- Sans goback 
+    <header class="header">
+      <div class="header-container">
+        <div class="logo-container">
+          <img src="images/ohmyfood.svg" alt="Logo of Ohmyfood" />
+        </div>
+      </div>
+    </header>-->
+
+    <header class="header">
+      <div class="header-container header-container--with-goback">
+        <a class="goback-container" href="../index.html">
+          <img src="../images/icons/GoBack.svg" alt="GoBack icon" />
+        </a>
+        <div class="logo-container">
+          <img src="../images/ohmyfood.svg" alt="Logo of Ohmyfood" />
+        </div>
+      </div>
+    </header>
+
+    <!-- Avec goback 
+    <header class="header header--with-location">
+      <div class="header-container header-container--with-goback">
+        <div class="goback-container">
+          <img src="images/icons/GoBack.svg" alt="GoBack icon" />
+        </div>
+        <div class="logo-container">
+          <img src="images/ohmyfood.svg" alt="Logo of Ohmyfood" />
+        </div>
+      </div>
+      <div class="location-container">
+        <img src="images/icons/Pin.svg" alt="Location icon" />
+        <p>Paris, Belleville</p>
+      </div>
+    </header>
+    -->
+    <main>
+      <section class="section-hero"></section>
+      <section class="section-menu">
+        <div class="menus">
+          <h2 class="menus--title">ENTREES</h2>
+          <div class="menu-item">
+            <input
+              type="checkbox"
+              id="menu-item-1"
+              class="menu-item__checkbox"
+            />
+            <label for="menu-item-1" class="menu-item__content">
+              <h3 class="menu-item__title">Tartare de poulpe acidulé</h3>
+              <div class="menu-item__description-price">
+                <p class="menu-item__description">Aux zestes d'orange</p>
+                <span class="menu-item__price">25€</span>
+              </div>
+            </label>
+            <div class="menu-item__check">
+              <img src="../images/icons/check.svg" alt="Sélectionner" />
+            </div>
+          </div>
+          <div class="menu-item">
+            <input
+              type="checkbox"
+              id="menu-item-2"
+              class="menu-item__checkbox"
+            />
+            <label for="menu-item-2" class="menu-item__content">
+              <h3 class="menu-item__title">Velouté de légumes d'antan</h3>
+              <div class="menu-item__description-price">
+                <p class="menu-item__description">
+                  Carotte, panais, topinambour
+                </p>
+                <span class="menu-item__price">35€</span>
+              </div>
+            </label>
+            <div class="menu-item__check">
+              <img src="../images/icons/check.svg" alt="Sélectionner" />
+            </div>
+          </div>
+          <div class="menu-item">
+            <input
+              type="checkbox"
+              id="menu-item-3"
+              class="menu-item__checkbox"
+            />
+            <label for="menu-item-3" class="menu-item__content">
+              <h3 class="menu-item__title">Soupe à l'oignon</h3>
+              <div class="menu-item__description-price">
+                <p class="menu-item__description">Revisitée</p>
+                <span class="menu-item__price">20€</span>
+              </div>
+            </label>
+            <div class="menu-item__check">
+              <img src="../images/icons/check.svg" alt="Sélectionner" />
+            </div>
+          </div>
+        </div>
+
+        <div class="menus">
+          <h2 class="menus--title">PLATS</h2>
+          <div class="menu-item">
+            <input
+              type="checkbox"
+              id="menu-item-4"
+              class="menu-item__checkbox"
+            />
+            <label for="menu-item-4" class="menu-item__content">
+              <h3 class="menu-item__title">Coquilles Saint-Jacques</h3>
+              <div class="menu-item__description-price">
+                <p class="menu-item__description">
+                  Accompagnées d'une purée de panais
+                </p>
+                <span class="menu-item__price">40€</span>
+              </div>
+            </label>
+            <div class="menu-item__check">
+              <img src="../images/icons/check.svg" alt="Sélectionner" />
+            </div>
+          </div>
+          <div class="menu-item">
+            <input
+              type="checkbox"
+              id="menu-item-5"
+              class="menu-item__checkbox"
+            />
+            <label for="menu-item-5" class="menu-item__content">
+              <h3 class="menu-item__title">Magret de canard</h3>
+              <div class="menu-item__description-price">
+                <p class="menu-item__description">
+                  Et parmentier de pommes de terre
+                </p>
+                <span class="menu-item__price">35€</span>
+              </div>
+            </label>
+            <div class="menu-item__check">
+              <img src="../images/icons/check.svg" alt="Sélectionner" />
+            </div>
+          </div>
+          <div class="menu-item">
+            <input
+              type="checkbox"
+              id="menu-item-6"
+              class="menu-item__checkbox"
+            />
+            <label for="menu-item-6" class="menu-item__content">
+              <h3 class="menu-item__title">Pigeonneau d'Ille-et-Vilaine</h3>
+              <div class="menu-item__description-price">
+                <p class="menu-item__description">
+                  Sur son lit de gnocchis aux légumes
+                </p>
+                <span class="menu-item__price">44€</span>
+              </div>
+            </label>
+            <div class="menu-item__check">
+              <img src="../images/icons/check.svg" alt="Sélectionner" />
+            </div>
+          </div>
+        </div>
+
+        <div class="menus">
+          <h2 class="menus--title">DESSERTS</h2>
+          <div class="menu-item">
+            <input
+              type="checkbox"
+              id="menu-item-7"
+              class="menu-item__checkbox"
+            />
+            <label for="menu-item-7" class="menu-item__content">
+              <h3 class="menu-item__title">Pétales de violettes glacés</h3>
+              <div class="menu-item__description-price">
+                <p class="menu-item__description">Et purée de noisettes</p>
+                <span class="menu-item__price">18€</span>
+              </div>
+            </label>
+            <div class="menu-item__check">
+              <img src="../images/icons/check.svg" alt="Sélectionner" />
+            </div>
+          </div>
+          <div class="menu-item">
+            <input
+              type="checkbox"
+              id="menu-item-8"
+              class="menu-item__checkbox"
+            />
+            <label for="menu-item-8" class="menu-item__content">
+              <h3 class="menu-item__title">Fondant au chocolat</h3>
+              <div class="menu-item__description-price">
+                <p class="menu-item__description">Revisité</p>
+                <span class="menu-item__price">22€</span>
+              </div>
+            </label>
+            <div class="menu-item__check">
+              <img src="../images/icons/check.svg" alt="Sélectionner" />
+            </div>
+          </div>
+          <div class="menu-item">
+            <input
+              type="checkbox"
+              id="menu-item-9"
+              class="menu-item__checkbox"
+            />
+            <label for="menu-item-9" class="menu-item__content">
+              <h3 class="menu-item__title">Millefeuille croustillant</h3>
+              <div class="menu-item__description-price">
+                <p class="menu-item__description">Myrtilles et pâte d'amande</p>
+                <span class="menu-item__price">23€</span>
+              </div>
+            </label>
+            <div class="menu-item__check">
+              <img src="../images/icons/check.svg" alt="Sélectionner" />
+            </div>
+          </div>
+        </div>
+        <button class="btn-primary">Explorer nos restaurants</button>
+      </section>
+    </main>
+    <footer class="footer">
+      <img
+        class="logo"
+        src="../images/ohmyfood@2xwhite.svg"
+        alt="Logo of Ohmyfood"
+      />
+      <div class="footer-links">
+        <a class="footer-link iconed" href="#">
+          <img
+            class="footer-link--icon"
+            src="../images/icons/food.svg"
+            alt="Croix icon"
+          />
+          Proposer un restaurant</a
+        >
+        <a class="footer-link iconed" href="#">
+          <img
+            class="footer-link--icon"
+            src="../images/icons/partenaire.svg"
+            alt="Croix icon"
+          />
+          Devenir partenaire</a
+        >
+        <a class="footer-link" href="#"> Devenir partenaire</a>
+        <a class="footer-link" href="#"> Contactez-nous </a>
+      </div>
+    </footer>
+  </body>
+</html>
