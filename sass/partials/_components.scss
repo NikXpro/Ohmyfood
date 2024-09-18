@@ -229,3 +229,143 @@
 .logo {
   height: 1.1875rem;
 }
+
+.section-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.menus {
+  &--title {
+    position: relative;
+    font-family: $font-text;
+    font-size: $font-size-1;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-bottom: 8px;
+  }
+  &--title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 3px;
+    background-color: #99e2d0;
+  }
+}
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin transition {
+  transition: all $transition-duration ease;
+}
+
+// Menu Item Styles
+.menu-item {
+  position: relative;
+  background-color: $color-background;
+  border-radius: 0.9375rem;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  cursor: pointer;
+  transition: box-shadow, background-color 0.3s ease;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $color-grey-2;
+    box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.15);
+  }
+
+  &__checkbox {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 10;
+
+    &:checked {
+      ~ .menu-item__content {
+        width: calc(100% - #{$check-width});
+      }
+
+      ~ .menu-item__check {
+        transform: translateX(0);
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    padding: 0.938rem;
+    margin-right: 0.938rem;
+    width: 100%;
+    gap: 0.313rem;
+    @include transition;
+  }
+
+  &__title {
+    margin: 0;
+    font-family: $font-text;
+    font-size: $font-size-1_12;
+    font-weight: bold;
+    padding-right: $check-width - 0.938rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex-grow: 1;
+  }
+
+  &__description-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding-right: 3.6875rem - 1.876rem;
+  }
+
+  &__description {
+    font-family: $font-text;
+    font-size: $font-size-0_94;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex-grow: 1;
+    margin: 0;
+  }
+
+  &__price {
+    font-family: $font-text;
+    font-size: $font-size-0_94;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+
+  &__check {
+    @include flex-center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $color-tertiary;
+    width: $check-width;
+    transform: translateX(100%);
+    @include transition;
+
+    img {
+      width: 20px;
+      height: 20px;
+      filter: brightness(0) invert(1); // Pour rendre l'icône blanche
+    }
+  }
+}
