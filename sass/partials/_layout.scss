@@ -152,5 +152,12 @@
     display: flex;
     flex-direction: column;
     gap: 0.4575rem;
+
+    .footer-link {
+      transition: opacity $transition-duration ease;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
   }
 }
