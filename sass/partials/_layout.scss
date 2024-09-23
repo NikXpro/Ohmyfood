@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #ffffff;
 }
 
 .header {
@@ -104,6 +105,12 @@
   padding: 3rem 1.25rem 4.25rem 1.25rem;
   gap: 1.9375rem;
 
+  &--container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.62rem;
+  }
+
   .steps-container {
     padding-left: 0.25rem;
     display: flex;
@@ -125,13 +132,51 @@
   }
 }
 
+.main-restaurant {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .section-menu {
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
-  padding: 0rem 0.88rem;
+  padding: 1.94rem 0.88rem 2.5rem 0.88rem;
+  max-width: 65.9375rem;
+  width: calc(100% - (0.88rem * 2));
+
+  position: relative;
+  margin-top: -3.437rem;
+  border-radius: 2.5rem 2.5rem 0rem 0rem;
+
+  background: $color-grey-2;
+
+  .restaurant-info {
+    display: flex;
+    justify-content: space-between;
+    max-width: 39.625rem;
+    align-items: center;
+    width: calc(100% - (0.88rem * 2));
+    padding: 0rem 1.5rem 0rem 0.25rem;
+
+    .restaurant-info--title {
+      font-size: $font-size-1_75;
+      font-family: $font-title;
+      font-weight: 400;
+    }
+
+    .heart-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
 
   .menus {
+    max-width: 39.625rem;
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
@@ -157,6 +202,20 @@
       transition: opacity $transition-duration ease;
       &:hover {
         opacity: 0.8;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-fonctionnement {
+    padding: 3.12rem 11.25rem;
+    .steps-container {
+      flex-direction: row;
+      width: 100%;
+      gap: 2.28rem;
+      .step {
+        width: 100%;
       }
     }
   }
