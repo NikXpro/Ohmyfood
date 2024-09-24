@@ -219,6 +219,14 @@
 }
 
 @media (min-width: 1024px) {
+  .section-menu {
+    .restaurant-info {
+      max-width: 19.1875rem;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+  }
+
   .footer {
     align-items: center;
     justify-content: end;
