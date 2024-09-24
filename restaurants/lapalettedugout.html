@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ohmyfood - A la française</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Sans goback 
+    <header class="header">
+      <div class="header-container">
+        <div class="logo-container">
+          <img src="images/ohmyfood.svg" alt="Logo of Ohmyfood" />
+        </div>
+      </div>
+    </header>-->
+
+    <header class="header">
+      <div class="header-container header-container--with-goback">
+        <a class="goback-container" href="../index.html">
+          <img src="../images/icons/GoBack.svg" alt="GoBack icon" />
+        </a>
+        <div class="logo-container">
+          <img src="../images/ohmyfood.svg" alt="Logo of Ohmyfood" />
+        </div>
+      </div>
+    </header>
+
+    <!-- Avec goback 
+    <header class="header header--with-location">
+      <div class="header-container header-container--with-goback">
+        <div class="goback-container">
+          <img src="images/icons/GoBack.svg" alt="GoBack icon" />
+        </div>
+        <div class="logo-container">
+          <img src="images/ohmyfood.svg" alt="Logo of Ohmyfood" />
+        </div>
+      </div>
+      <div class="location-container">
+        <img src="images/icons/Pin.svg" alt="Location icon" />
+        <p>Paris, Belleville</p>
+      </div>
+    </header>
+    -->
+    <main class="main-restaurant">
+      <img
+        src="../images/restaurants/la_palette_du_gout.jpg"
+        alt="La palette du goût"
+        class="image"
+      />
+      <section class="section-menu">
+        <div class="restaurant-info">
+          <h1 class="restaurant-info--title">La palette du goût</h1>
+          <div class="heart-container">
+            <svg
+              class="heart-stroke"
+              width="22"
+              height="21"
+              viewBox="0 0 22 21"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.2206 2.40576L12.2208 2.40551C14.2226 0.15233 17.4035 -0.169451 19.5243 1.80187C22.0186 4.1243 22.156 8.32326 19.9123 10.8492L19.9122 10.8493L11.5978 20.2148C11.2596 20.5956 10.7372 20.5956 10.399 20.2148L2.0848 10.8495C-0.15494 8.32357 -0.0175439 4.1245 2.47664 1.80201C4.59762 -0.169649 7.78271 0.152585 9.77992 2.40514L9.78047 2.40576L10.627 3.35732L11.0005 3.77727L11.3741 3.35732L12.2206 2.40576Z"
+                stroke="#101010"
+              />
+            </svg>
+
+            <input type="checkbox" class="heart-clip" />
+
+            <div class="fill">
+              <svg
+                class="heart-fill"
+                width="22"
+                height="21"
+                viewBox="0 0 22 21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <defs>
+                  <linearGradient
+                    id="grad1"
+                    x1="62%"
+                    y1="0%"
+                    x2="38%"
+                    y2="100%"
+                  >
+                    <stop
+                      offset="-11.44%"
+                      style="stop-color: rgb(147, 86, 220); stop-opacity: 1"
+                    />
+                    <stop
+                      offset="123.93%"
+                      style="stop-color: rgb(255, 121, 218); stop-opacity: 1"
+                    />
+                  </linearGradient>
+                </defs>
+                <path
+                  d="M12.2206 2.40576L12.2208 2.40551C14.2226 0.15233 17.4035 -0.169451 19.5243 1.80187C22.0186 4.1243 22.156 8.32326 19.9123 10.8492L19.9122 10.8493L11.5978 20.2148C11.2596 20.5956 10.7372 20.5956 10.399 20.2148L2.0848 10.8495C-0.15494 8.32357 -0.0175439 4.1245 2.47664 1.80201C4.59762 -0.169649 7.78271 0.152585 9.77992 2.40514L9.78047 2.40576L10.627 3.35732L11.0005 3.77727L11.3741 3.35732L12.2206 2.40576Z"
+                  fill="url(#grad1)"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="menus">
+          <h2 class="menus--title">ENTRÉES</h2>
+          <div class="menu-item">
+            <input
+              type="checkbox"
+              id="menu-item-1"
+              class="menu-item__checkbox"
+            />
+            <label for="menu-item-1" class="menu-item__content">
+              <h3 class="menu-item__title">Fricassée d'escargots</h3>
+              <div class="menu-item__description-price">
+                <p class="menu-item__description">Au piment d'Espelette</p>
+                <span class="menu-item__price">25€</span>
+              </div>
+            </label>
+            <div class="menu-item__check">
+              <img src="../images/icons/check.svg" alt="Sélectionner" />
+            </div>
+          </div>
+          <div class="menu-item">
+            <input
+              type="checkbox"
+              id="menu-item-2"
+              class="menu-item__checkbox"
+            />
+            <label for="menu-item-2" class="menu-item__content">
+              <h3 class="menu-item__title">Foie gras de canard mi-cuit</h3>
+              <div class="menu-item__description-price">
+                <p class="menu-item__description">
+                  Et ses copeaux de truffe noire
+                </p>
+                <span class="menu-item__price">35€</span>
+              </div>
+            </label>
+            <div class="menu-item__check">
+              <img src="../images/icons/check.svg" alt="Sélectionner" />
+            </div>
+          </div>
+          <div class="menu-item">
+            <input
+              type="checkbox"
+              id="menu-item-3"
+              class="menu-item__checkbox"
+            />
+            <label for="menu-item-3" class="menu-item__content">
+              <h3 class="menu-item__title">Œuf au plat</h3>
+              <div class="menu-item__description-price">
+                <p class="menu-item__description">
+                  Assaisonné à la truffe sur lit de caviar
+                </p>
+                <span class="menu-item__price">20€</span>
+              </div>
+            </label>
+            <div class="menu-item__check">
+              <img src="../images/icons/check.svg" alt="Sélectionner" />
+            </div>
+          </div>
+        </div>
+
+        <div class="menus">
+          <h2 class="menus--title">PLATS</h2>
+          <div class="menu-item">
+            <input
+              type="checkbox"
+              id="menu-item-4"
+              class="menu-item__checkbox"
+            />
+            <label for="menu-item-4" class="menu-item__content">
+              <h3 class="menu-item__title">Filet de bœuf aux herbes</h3>
+              <div class="menu-item__description-price">
+                <p class="menu-item__description">
+                  Accompagné de sa ribambelle de légumes
+                </p>
+                <span class="menu-item__price">40€</span>
+              </div>
+            </label>
+            <div class="menu-item__check">
+              <img src="../images/icons/check.svg" alt="Sélectionner" />
+            </div>
+          </div>
+          <div class="menu-item">
+            <input
+              type="checkbox"
+              id="menu-item-5"
+              class="menu-item__checkbox"
+            />
+            <label for="menu-item-5" class="menu-item__content">
+              <h3 class="menu-item__title">Parmentier de queue de bœuf</h3>
+              <div class="menu-item__description-price">
+                <p class="menu-item__description">
+                  À la truffe noire sur sa purée de panais
+                </p>
+                <span class="menu-item__price">35€</span>
+              </div>
+            </label>
+            <div class="menu-item__check">
+              <img src="../images/icons/check.svg" alt="Sélectionner" />
+            </div>
+          </div>
+          <div class="menu-item">
+            <input
+              type="checkbox"
+              id="menu-item-6"
+              class="menu-item__checkbox"
+            />
+            <label for="menu-item-6" class="menu-item__content">
+              <h3 class="menu-item__title">Filet de turbot</h3>
+              <div class="menu-item__description-price">
+                <p class="menu-item__description">Aux agrumes</p>
+                <span class="menu-item__price">44€</span>
+              </div>
+            </label>
+            <div class="menu-item__check">
+              <img src="../images/icons/check.svg" alt="Sélectionner" />
+            </div>
+          </div>
+        </div>
+
+        <div class="menus">
+          <h2 class="menus--title">DESSERTS</h2>
+          <div class="menu-item">
+            <input
+              type="checkbox"
+              id="menu-item-7"
+              class="menu-item__checkbox"
+            />
+            <label for="menu-item-7" class="menu-item__content">
+              <h3 class="menu-item__title">Paris-Brest</h3>
+              <div class="menu-item__description-price">
+                <p class="menu-item__description">Revisité</p>
+                <span class="menu-item__price">18€</span>
+              </div>
+            </label>
+            <div class="menu-item__check">
+              <img src="../images/icons/check.svg" alt="Sélectionner" />
+            </div>
+          </div>
+          <div class="menu-item">
+            <input
+              type="checkbox"
+              id="menu-item-8"
+              class="menu-item__checkbox"
+            />
+            <label for="menu-item-8" class="menu-item__content">
+              <h3 class="menu-item__title">Macaron au chocolat d'exception</h3>
+              <div class="menu-item__description-price">
+                <p class="menu-item__description">
+                  Et glace à la vanille de Madagascar
+                </p>
+                <span class="menu-item__price">22€</span>
+              </div>
+            </label>
+            <div class="menu-item__check">
+              <img src="../images/icons/check.svg" alt="Sélectionner" />
+            </div>
+          </div>
+          <div class="menu-item">
+            <input
+              type="checkbox"
+              id="menu-item-9"
+              class="menu-item__checkbox"
+            />
+            <label for="menu-item-9" class="menu-item__content">
+              <h3 class="menu-item__title">Mousse au chocolat</h3>
+              <div class="menu-item__description-price">
+                <p class="menu-item__description">
+                  Au piment d'Espelette et à la truffe noire
+                </p>
+                <span class="menu-item__price">23€</span>
+              </div>
+            </label>
+            <div class="menu-item__check">
+              <img src="../images/icons/check.svg" alt="Sélectionner" />
+            </div>
+          </div>
+        </div>
+        <button class="btn-primary">Commander</button>
+      </section>
+    </main>
+    <footer class="footer">
+      <img
+        class="logo"
+        src="../images/ohmyfood@2xwhite.svg"
+        alt="Logo of Ohmyfood"
+      />
+      <div class="footer-links">
+        <div class="links-icons">
+          <a class="footer-link iconed" href="#">
+            <img
+              class="footer-link--icon"
+              src="../images/icons/food.svg"
+              alt="Croix icon"
+            />
+            Proposer un restaurant</a
+          >
+          <a class="footer-link iconed" href="#">
+            <img
+              class="footer-link--icon"
+              src="../images/icons/partenaire.svg"
+              alt="Croix icon"
+            />
+            Devenir partenaire</a
+          >
+        </div>
+        <div class="links-text">
+          <a class="footer-link" href="#"> Devenir partenaire</a>
+          <a class="footer-link" href="#"> Contactez-nous </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
