@@ -203,6 +203,12 @@
     flex-direction: column;
     gap: 0.4575rem;
 
+    .links-icons,
+    .links-text {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4575rem;
+    }
     .footer-link {
       transition: opacity $transition-duration ease;
       &:hover {
@@ -213,6 +219,32 @@
 }
 
 @media (min-width: 1024px) {
+  .footer {
+    align-items: center;
+    justify-content: end;
+    padding: 2.97rem 4.12rem;
+    flex-direction: row-reverse;
+    .logo {
+      width: 6.063rem;
+      height: auto;
+    }
+    .footer-links {
+      flex-direction: row;
+      gap: 2.69rem;
+      padding-right: 4.62rem;
+      .links-icons {
+        display: flex;
+        flex-direction: row;
+        gap: 0.94rem;
+      }
+      .links-text {
+        display: flex;
+        flex-direction: row;
+        gap: 0.94rem;
+      }
+    }
+  }
+
   .section-fonctionnement {
     padding: 3.12rem 11.25rem;
     align-items: center;
