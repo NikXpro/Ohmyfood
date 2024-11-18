@@ -28,9 +28,9 @@
         display: flex;
         position: absolute;
         left: 1.06rem;
-        transition: scale, opacity $transition-duration ease;
+        transition: transform, opacity $transition-duration ease;
         &:hover {
-          scale: 1.03;
+          transform: scale(1.03);
           cursor: pointer;
           opacity: 0.95;
         }
