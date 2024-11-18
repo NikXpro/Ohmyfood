@@ -324,6 +324,7 @@ a {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-weight: 500;
+  text-align: center;
   min-width: 11.625rem;
   padding: 1.05rem 1.55rem;
   transition: color 0.3s ease-in-out, background 0.3s ease-in-out, background-size 0.3s ease-in-out, background-position 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
