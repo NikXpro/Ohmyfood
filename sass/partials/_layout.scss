@@ -304,11 +304,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 9999; // Assurez-vous que le loader est au-dessus de tout le contenu
-  animation: fadeOut 3s forwards; // Animation pour masquer le loader
+  z-index: 9999;
+  animation: fadeOut 3s forwards;
 
   img {
-    width: 10rem; // Ajustez la taille selon vos besoins
+    width: 10rem;
   }
 }
 
