@@ -305,7 +305,7 @@
   align-items: center;
   justify-content: center;
   z-index: 9999;
-  animation: fadeOut 3s forwards;
+  animation: fadeOut 3.5s forwards;
 
   img {
     width: 10rem;
@@ -314,13 +314,13 @@
 
 @keyframes fadeOut {
   0% {
-    opacity: 1; // Visible au début
+    opacity: 1;
   }
-  99% {
-    opacity: 1; // Reste visible jusqu'à presque la fin
+  80% {
+    opacity: 1;
   }
   100% {
-    opacity: 0; // Devenir invisible à la fin
-    visibility: hidden; // Masquer complètement
+    opacity: 0;
+    visibility: hidden;
   }
 }
